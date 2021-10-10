@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Poiret+One&family=Press+Start+2P&display=swap");
+$graph-color: #ffcf47;
+$default-bg: #ff6633;
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $default-bg;
+}
+
+.App {
+  margin-top: 3vh;
+  text-align: center;
+  svg {
+    background-color: $default-bg;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    .dot {
+      stroke: #252324;
+    }
+    #title {
+      font-family: "Press Start 2P", cursive;
+      fill: #06720f;
+      text-shadow: 2px 2px 0 #fff;
+    }
+    #sub-title {
+      font-family: "Press Start 2P", cursive;
+      font-size: 0.7em;
+      fill: #fff;
+      text-shadow: 1px 1px 0 #06720f;
+      letter-spacing: 2px;
+    }
+    #legend text {
+      font-size: 0.8em;
+      font-family: "Poiret One", cursive;
+      font-weight: bold;
+      fill: #fff;
+    }
+    line {
+      stroke: $graph-color;
+    }
+    path {
+      stroke: $graph-color;
+    }
+    text {
+      fill: $graph-color;
+      font-weight: 650;
+    }
+  }
+  #tooltip {
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    position: absolute;
+    text-align: start;
+    padding: 10px;
+    font-size: 0.7em;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  #da3ker {
+    color: white;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-family: "Rampart One", cursive;
+    margin: auto;
+  }
+}
